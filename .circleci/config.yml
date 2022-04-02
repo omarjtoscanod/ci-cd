@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run: npm install && npm test
-  +deploy:
+  deploy:
     docker:
       - image: 'cimg/node:17.8.0-browsers'
     steps:
